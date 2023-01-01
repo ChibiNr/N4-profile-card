@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" type="img/png" href="images/favicon-32x32.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;700;900&display=swap" rel="stylesheet">
+        <title>Profile Card</title>
+
+        <style>
+            body {
+                background-color: hsl(185,75%,39%);
+                display: flex;
+                position: relative;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-image: url(images/bg-pattern-top.svg), 
+                url(images/bg-pattern-bottom.svg);
+                background-position: -45vh -40vh, 65vh 50vh; 
+            }
+            #main {
+                width: 350px;
+                height: 374px;
+                border-radius: 15px;
+                background-color: hsl(0, 0%, 100%);
+                z-index: 1;
+            }
+            #cardpattern {
+                border-radius: 15px 15px 0px 0px;
+            }
+            #agarshemidzlia {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+            #avatar {
+                position: absolute;
+                left: 127px;
+                top: -56px;
+                border: 5px solid hsl(0, 0%, 100%);
+                border-radius: 50%;
+                display: block;
+            }
+            #nameage {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 48px;
+            }
+            #name {
+                font-family: 'Kumbh Sans';
+                font-weight: 700;
+                font-size: 18px;
+                color: hsl(228,23%,23%);
+                text-align: center;
+                margin-right: 8.5px;
+            }
+            #age {
+                font-family: 'Kumbh Sans';
+                font-weight: 400;
+                font-size: 18px;
+                color: hsl(228,10%,47%);
+                text-align: center;
+                
+            }
+            #city {
+                font-family: 'Kumbh Sans';
+                font-weight: 400;
+                font-size: 14px;
+                color: hsl(228,10%,47%);
+                margin: 0px 150px 28px 150px;
+            }
+            hr {
+                border: 1px solid hsl(228, 9%, 92%);
+                width: 348px;
+            }
+            #bottominfo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding-top: 8px;
+            }
+            .number {
+                font-family: 'Kumbh Sans';
+                font-weight: 700;
+                font-size: 18px;
+                color: hsl(228,23%,23%);
+                text-align: center;
+                margin: 0px 38.5px;
+            }
+            .text {
+                font-family: 'Kumbh Sans';
+                font-weight: 400;
+                font-size: 10px;
+                color: hsl(228,10%,47%);
+                letter-spacing: 1.5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <img id="cardpattern" src="images/bg-pattern-card.svg">
+            <div id="agarshemidzlia">
+                <img id='avatar' src="images/image-victor.jpg">
+                <div id="nameage">
+                    <h1 id="name">Victor Crest</h1>
+                    <p id="age">26</p>
+                </div>
+                <p id="city">London</p>
+            </div>
+            <hr>
+
+            <div id="bottominfo">
+                <div id="follow">
+                    <section class="number">80K</section>
+                    <section class="text">Followers</section>
+                </div>
+                <div id="like">
+                    <section class="number">803K</section>
+                    <section class="text">Likes</section>
+                </div>
+                <div id="photo">
+                    <Section class="number">1.4K</Section>
+                    <section class="text">Photos</section>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
